@@ -1,0 +1,7 @@
+textarea {
+    min-height: 400px;
+}
+
+.pointer-link {
+    cursor: pointer;
+}

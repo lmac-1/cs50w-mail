@@ -1,0 +1,33 @@
+{% extends "mail/layout.html" %}
+
+{% block body %}
+<div class="d-flex vh-100 flex-column align-content-center justify-content-center">
+    <div class="align-self-center text-center border p-5 bg-light">
+        <h2 class="pb-3">Login</h2>
+        
+        {% for message in messages %}
+            <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            {{ message }}
+            </div>
+        {% endfor %}
+
+        <form action="{% url 'login' %}" method="post" class="">
+            {% csrf_token %}
+            <div class="form-group">
+                <input autofocus class="form-control" type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="Password">
+            </div>
+            <input class="btn btn-primary btn-block my-2" type="submit" value="Login">
+        </form>
+        <small>Don't have an account? <a href="{% url 'register' %}">Register here.</a></small>
+    </div>
+</div>
+
+    
+
+{% endblock %}
