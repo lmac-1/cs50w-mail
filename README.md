@@ -13,7 +13,7 @@ This project was built against the following [specification](https://cs50.harvar
 Using JavaScript, HTML, and CSS, complete the implementation of your single-page-app email client inside of inbox.js (and not additional or other files; for grading purposes, we’re only going to be considering inbox.js!). You must fulfill the following requirements:
 
 - **Send Mail**. When a user submits the email composition form, add JavaScript code to actually send the email.
-    - You’ll likely want to make a POST request to /emails, passing in values for recipients, subject, and body.
+    - You’ll likely want to make a POST request to `/emails`, passing in values for recipients, subject, and body.
     - Once the email has been sent, load the user’s sent mailbox.
 - **Mailbox**. When a user visits their Inbox, Sent mailbox, or Archive, load the appropriate mailbox.
     - You’ll likely want to make a GET request to /emails/<mailbox> to request the emails for a particular mailbox.
