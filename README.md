@@ -3,11 +3,11 @@
 A front-end for an email client that makes API calls to send and receive emails. This was Project 3 of HarvardX's [CS50W](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript) course in 2021 and was built using Python, JavaScript, Django, CSS, HTML and Bootstrap.
 
 
-## YouTube Video
+## 🎞 YouTube Video
 
 A short video where I go through the required specification as part of my submission for the course: https://youtu.be/pVKxhRE4Cic 
 
-## Specification
+## 📝 Specification
 This project was built against the following [specification](https://cs50.harvard.edu/web/2020/projects/3/mail/):
 
 Using JavaScript, HTML, and CSS, complete the implementation of your single-page-app email client inside of inbox.js (and not additional or other files; for grading purposes, we’re only going to be considering inbox.js!). You must fulfill the following requirements:
